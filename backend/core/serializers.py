@@ -6,6 +6,6 @@ class ProductsSerialize(serializers.ModelSerializer):
         model = Products
         fields = (  
                     'name',
-                    'description'
+                    'description',
                     'price'
                 )
