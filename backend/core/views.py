@@ -11,8 +11,8 @@ from .serializers import ProductsSerialize
 def ProductsApi(request, id=0):
     if request.method=='GET':   
         products = Products.objects.all()
-        products_serializer = ProductsSerialize(products, many=True)
-        return JsonResponse(products_serializer.data, safe=False)
+        products_serializer = ProductsSerialize( products, many=True)
+        return JsonResponse(products_serializer.data , safe=False)
         
     elif request.method=='POST':
         product_data = JSONParser().parse(request)
