@@ -42,8 +42,8 @@ $ python manage.py createsuperuser
 
 ## Rodar as migrations 
 
-$ python manage.py createsuperuser
+$ python manage.py migrate
 
 ## Rodar projeto
 
-$ python manage.py migrate
+$ python manage.py runserver
